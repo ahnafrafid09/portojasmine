@@ -301,12 +301,12 @@ nav .fas {
     flex-direction: column;
   }
 
-  .col-about-1{
+  .col-about-1 {
     width: 100%;
-    margin: 20px 0; 
+    margin: 20px 0;
   }
 
-  .col-about-1 img{
+  .col-about-1 img {
     width: 35%;
   }
 
