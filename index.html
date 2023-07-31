@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portofolio Website</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/5fe06d7a97.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div id="header">
+      <div class="container">
+        <nav class="navbar">
+          <h1>Jasmine.</h1>
+          <ul id="sidemenu">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="">Work</a></li>
+            <li><a href="">Contact</a></li>
+            <i class="fas fa-solid fa-xmark" onclick="closemenu()"></i>
+          </ul>
+          <i class="fas fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="hero">
+          <div class="col-hero-1">
+            <p>Hi Everyone, I'm</p>
+            <h1>Jasmine Syafiyyah Annisa</h1>
+            <h2>Math Student</h2>
+            <a href="#">contact me</a>
+          </div>
+          <div class="col-hero-2">
+            <img src="asset/photo_2.png" />
+            <div class="blob">
+              <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  fill="#FF004F"
+                  d="M65.7,-52.4C79.9,-34.5,82.7,-7.5,76.7,17C70.7,41.6,56,63.7,38,68.3C19.9,73,-1.5,60.2,-23.7,49.4C-46,38.6,-69.1,29.8,-74.1,14.9C-79.1,0,-65.9,-21,-50.5,-39.1C-35.1,-57.2,-17.6,-72.5,4.1,-75.7C25.7,-79,51.5,-70.3,65.7,-52.4Z"
+                  transform="translate(100 100)"
+                />
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- about section -->
+    <div id="about">
+      <div class="container">
+        <div class="title">
+          <h1>about me</h1>
+        </div>
+        <div class="row">
+          <div class="col-about-1">
+            <img src="asset/photo 1.jpg" />
+          </div>
+          <div class="col-about-2">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. A
+              adipisci impedit libero nobis minima provident vitae, voluptates
+              repellat accusamus at! Ab, soluta nostrum incidunt nam assumenda
+              quae, sapiente suscipit veniam dolor blanditiis ratione quasi
+              magnam sed maiores, est rerum officia. Reiciendis qui tempore quos
+              saepe error cupiditate repellendus. Ex, veritatis.
+            </p>
+            <div class="tab-titles">
+              <p class="tab-links active-links" onclick="opentab('skills')">Skills</p>
+              <p class="tab-links" onclick="opentab('experience')">Experience</p>
+              <p class="tab-links" onclick="opentab('education')">Education</p>
+            </div>
+            <div class="tab-contents active-tab" id="skills">
+              <ul>
+                <li><span>Data Analyst</span><br>R, Python, Data Visualization</li>
+                <li><span>Web Developer</span><br>HTML, CSS, JavaScript</li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="experience">
+              <ul>
+                <li><span>Internship</span><br>Bank Syariah Indonesia (BSI)</li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="education">
+              <ul>
+                <li><span>High School</span><br>SMAN 3 Malang</li>
+                <li><span>College</span><br>Pure Math, Jember University</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,316 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  text-decoration: none;
+}
+
+body {
+  background: #f2f2f2;
+  color: #080800;
+}
+
+#header {
+  width: 100%;
+  height: 100vh;
+}
+
+.container {
+  padding: 10px 10%;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.navbar h1 {
+  font-family: "Dancing Script", cursive;
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+nav ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  list-style-type: none;
+  width: 30%;
+}
+
+nav ul li a {
+  color: #0a0a0a;
+  font-size: 18px;
+  position: relative;
+}
+
+nav ul li a::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 3px;
+  background: #ff004f;
+  left: 0;
+  bottom: -5px;
+  transition: 0.5s;
+}
+nav ul li a:hover::after {
+  width: 100%;
+}
+
+nav .fas {
+  display: none;
+}
+
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 5%;
+}
+
+.col-hero-1 {
+  width: 60%;
+  margin-top: 10%;
+  flex-basis: 50%;
+}
+
+.col-hero-1 p {
+  font-size: 1.3em;
+  text-transform: capitalize;
+  color: #ff004f;
+}
+
+.col-hero-1 h1 {
+  font-size: 2.5em;
+  font-weight: 800;
+  color: #1d1d1d;
+}
+
+.col-hero-1 h2 {
+  margin-bottom: 20px;
+  color: #414040;
+  font-weight: 500;
+  font-size: 1.4em;
+}
+
+.col-hero-1 a {
+  padding: 10px 40px;
+  border-radius: 10px;
+  background: #ff004f;
+  border: none;
+  cursor: pointer;
+  color: #f2f2f2;
+  font-size: 1em;
+  text-transform: capitalize;
+  font-weight: 500;
+}
+
+.col-hero-2 {
+  position: relative;
+}
+
+.col-hero-2 img {
+  width: 100%;
+  height: auto;
+}
+
+.col-hero-2 svg {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  z-index: -1;
+}
+
+/* about */
+#about {
+  width: 100%;
+  height: 100vh;
+  background-color: #ffe9ef;
+}
+
+.title {
+  text-transform: uppercase;
+  display: flex;
+  color: #1d1d1d;
+  font-size: 1.1em;
+  justify-content: center;
+  align-items: center;
+}
+
+.row {
+  width: 100%;
+  height: 70vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.col-about-1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30%;
+}
+
+.col-about-1 img {
+  width: 70%;
+  border-radius: 15px;
+}
+
+.col-about-2 {
+  width: 70%;
+  height: 40vh;
+  padding: 0 20px;
+}
+
+.tab-titles {
+  display: flex;
+  margin: 20px 0 40px;
+}
+
+.tab-links {
+  margin-right: 50px;
+  font-size: 18px;
+  font-weight: 500;
+  cursor: pointer;
+  position: relative;
+}
+.tab-links::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 3px;
+  background: #ff004f;
+  left: 0;
+  bottom: -5px;
+  transition: 0.5s;
+}
+
+.tab-links:hover::after {
+  width: 100%;
+}
+
+.tab-links.active-links::after {
+  width: 50%;
+}
+
+.tab-contents ul li {
+  list-style: none;
+  margin: 15px 0;
+}
+
+.tab-contents ul li span {
+  color: #ff0051;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.tab-contents {
+  display: none;
+}
+
+.tab-contents.active-tab {
+  display: block;
+}
+
+/* RESPONSIVE SECTION */
+
+/* TABLET */
+@media only screen and (max-width: 1046px) {
+  /* header */
+  nav ul {
+    width: 40%;
+  }
+
+  .col-hero-1 h1 {
+    font-size: 2em;
+  }
+
+  .col-hero-1 p {
+    font-size: 1.5em;
+  }
+}
+
+/* MOBILE */
+@media only screen and (max-width: 794px) {
+  /* header */
+  nav .fas {
+    display: block;
+    font-size: 25px;
+    cursor: pointer;
+  }
+
+  nav ul {
+    position: fixed;
+    background: #ff004f;
+    top: 0;
+    justify-content: flex-start;
+    right: -200px;
+    width: 200px;
+    height: 100vh;
+    flex-direction: column;
+    padding-top: 50px;
+    z-index: 2;
+  }
+  nav ul li {
+    display: block;
+    margin: 25px;
+  }
+
+  nav ul li a {
+    color: #fff;
+  }
+
+  nav ul .fas {
+    position: absolute;
+    top: 25px;
+    color: #fff;
+    left: 25px;
+  }
+
+  .hero {
+    flex-wrap: wrap-reverse;
+    margin-top: 20px;
+    height: 80vh;
+  }
+
+  .col-hero-1 {
+    text-align: center;
+    margin: auto;
+    width: 100%;
+  }
+
+  .col-hero-1 p {
+    margin-top: 20px;
+    font-size: 1.5em;
+  }
+
+  .col-hero-1 h1 {
+    font-size: 2em;
+  }
+
+  .col-hero-2 {
+    margin: auto;
+  }
+
+  /* ABOUT */
+  .row {
+    flex-direction: column;
+  }
+
+  .col-about-1{
+    width: 100%;
+    margin: 20px 0; 
+  }
+
+  .col-about-1 img{
+    width: 35%;
+  }
+
+  .col-about-2 {
+    width: 100%;
+  }
+}
